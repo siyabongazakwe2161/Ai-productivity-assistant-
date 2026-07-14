@@ -41,9 +41,10 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
   --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-glow));
-  --gradient-subtle: linear-gradient(180deg, oklch(0.98 0.01 250), oklch(1 0 0));
-  --shadow-elegant: 0 12px 40px -12px color-mix(in oklab, var(--primary) 30%, transparent);
-  --shadow-card: 0 1px 3px oklch(0.2 0.05 260 / 0.06), 0 8px 24px -12px oklch(0.2 0.05 260 / 0.08);
+  --gradient-subtle: linear-gradient(180deg, oklch(0.97 0.03 250), oklch(1 0 0));
+  --shadow-elegant: 0 0 40px color-mix(in oklab, var(--primary-glow) 45%, transparent), 0 12px 40px -12px color-mix(in oklab, var(--primary) 55%, transparent);
+  --shadow-card: 0 0 24px color-mix(in oklab, var(--primary-glow) 18%, transparent), 0 8px 24px -12px oklch(0.25 0.15 260 / 0.15);
+
 }
 
 :root {

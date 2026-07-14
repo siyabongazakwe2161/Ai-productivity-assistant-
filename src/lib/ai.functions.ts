@@ -16,10 +16,8 @@ export const runAI = createServerFn({ method: "POST" })
     const gateway = createLovableAiGatewayProvider(key);
     const { text } = await generateText({
       model: gateway("google/gemini-3-flash-preview"),
-      messages: [
-        { role: "system", content: data.system },
-        { role: "user", content: data.prompt },
-      ],
+      system: data.system,
+      prompt: data.prompt,
     });
     return { text };
   });
